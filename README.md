@@ -12,7 +12,7 @@ The **Aurora VFX Engine** is a high-performance **Graphics Renderer and Relativi
 > **Architect:** Wenderson Dias (*Siliconarch Softwares*)
 
 
-![demo gif](https://github.com/user-attachments/assets/b86c1d97-0f9c-430d-980b-7e9058aae4c6)
+![demo gif](https://raw.githubusercontent.com/welabsdev/AuroraVFXEngine/refs/heads/main/demo.gif)
 ---
 
 ## 📚 Technical Stack & Core Dependencies
