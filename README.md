@@ -15,7 +15,7 @@ The **Aurora VFX Engine** is a high-performance **Graphics Renderer and Relativi
 ![demo gif](https://raw.githubusercontent.com/welabsdev/AuroraVFXEngine/refs/heads/main/demo.gif)
 ---
 
-## 📚 Technical Stack & Core Dependencies
+## Technical Stack & Core Dependencies
 
 Aurora relies on a minimalistic and carefully chosen set of open-source libraries to maintain total control over hardware allocation, preventing hidden garbage collection cycles.
 
@@ -33,7 +33,7 @@ Aurora relies on a minimalistic and carefully chosen set of open-source librarie
 
 ---
 
-## ⚙️ Architecture & Relativistic Physics Shaders
+## Architecture & Relativistic Physics Shaders
 
 All physics calculations are processed mass-parallelized directly inside **GLSL (OpenGL Shading Language)** kernels to handle heavy loads without choking the CPU.
 
@@ -45,7 +45,7 @@ All physics calculations are processed mass-parallelized directly inside **GLSL 
 
 ---
 
-## 🖥️ Hardware & System Requirements
+## Hardware & System Requirements
 
 | Specification | Minimum Requirement | Recommended Specification |
 | :--- | :--- | :--- |
