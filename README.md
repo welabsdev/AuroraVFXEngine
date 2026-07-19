@@ -1,66 +1,71 @@
-# ✨ Aurora VFX & Astro-Sim Engine
+# Aurora VFX & Astro-Sim Engine
 
-> **Open-source graphics renderer and relativistic astrophysics simulation engine built from scratch in modern C++.**
+## Low-Level, Open Source Graphics & Relativistic Astrophysics Simulation Engine
 
-Aurora is a lightweight graphics engine focused on **low-level rendering**, **GPU-driven simulations**, and **real-time astrophysical visualization**. Instead of relying on a full-featured game engine, Aurora communicates directly with the OpenGL API, providing explicit control over rendering, memory management, and GPU resources.
+The **Aurora VFX Engine** is a high-performance **graphics renderer** and **astrophysics simulation engine** written entirely in modern **C++23**. Rather than relying on a full-featured game engine, Aurora is built directly on top of the **OpenGL Core Profile**, providing explicit control over rendering, memory management, and GPU resources.
 
-Designed primarily as a research and educational project, Aurora combines modern rendering techniques with physically inspired simulations of black holes, gravitational lensing, relativistic effects, and procedural space-time visualization.
+The project is designed as both an educational platform for modern computer graphics and a foundation for physically inspired space simulations, combining low-level rendering techniques with real-time visualization of relativistic phenomena.
 
----
+> [!IMPORTANT]
+> **Current Version:** `v0.7.0 (Beta - Ultimate Pro)`  
+> **Language Standard:** `C++23`  
+> **Graphics API:** `OpenGL 3.3+ Core Profile`  
+> **Architect:** **Wenderson Dias** (*Siliconarch Softwares*)
 
-## ✨ Features
-
-- 🚀 Modern OpenGL 3.3+ Core Profile renderer
-- ⚡ Custom C++23 rendering architecture
-- 🛰️ GPU-based particle simulations
-- 🎨 GLSL shader framework
-- 📦 Model loading with Assimp
-- 🖥️ SDL3 windowing and input system
-- 📐 GLM mathematics library
-- 🛠️ Dear ImGui debugging interface
-- 🔥 Runtime shader hot-reloading
-- 🌌 Relativistic astrophysics visualization
-- 🧮 Custom math utilities
-- 🧩 Minimal external dependencies
+![Aurora Demo](demo.gif)
 
 ---
 
-## 📷 Preview
+# Features
 
-<p align="center">
-    <img src="demo.gif" width="900">
-</p>
+- Modern OpenGL 3.3+ renderer
+- Custom rendering pipeline
+- Explicit GPU resource management
+- GLSL shader framework
+- GPU-driven particle simulation
+- Runtime shader hot reloading
+- Custom camera system
+- Assimp mesh importing
+- Dear ImGui debugging interface
+- Physically inspired astrophysics visualization
+- Minimal external dependencies
 
 ---
 
-# 🎯 Philosophy
+# Design Philosophy
 
-Aurora follows a simple philosophy:
+Aurora follows a simple set of design principles:
 
 - Minimal abstractions
 - Explicit memory management
 - GPU-first rendering
-- Modern C++ architecture
-- Open-source development
+- Modular architecture
+- Modern C++ practices
 - Educational implementation of graphics techniques
 
-Rather than hiding rendering behind large engine frameworks, Aurora exposes the graphics pipeline while keeping the code clean, modular and extensible.
+Unlike traditional game engines, Aurora focuses on exposing the rendering pipeline while maintaining a clean and extensible architecture suitable for experimentation and research.
 
 ---
 
-# 🧰 Technology Stack
+# Technical Stack
 
-| Library | Purpose |
-|----------|---------|
-| **SDL3** | Window creation, input handling and OpenGL context |
-| **GLAD** | OpenGL function loader |
-| **GLM** | GLSL-compatible mathematics library |
-| **Assimp** | 3D model importer |
-| **Dear ImGui** | Runtime debugging interface |
+## Graphics & Window System
+
+- **SDL3** — Window management, input handling, timing and OpenGL context creation.
+- **GLAD** — OpenGL function loader configured for the Core Profile.
+
+## Mathematics & Assets
+
+- **GLM** — GLSL-compatible mathematics library.
+- **Assimp** — Importer for 3D models and mesh data.
+
+## User Interface
+
+- **Dear ImGui** — Immediate-mode debugging interface integrated directly into the rendering pipeline.
 
 ---
 
-# 🏗️ Engine Architecture
+# Engine Architecture
 
 ```text
 Application
@@ -72,12 +77,12 @@ Application
 OpenGL Context
      │
      ▼
-Aurora Renderer
- ├── Camera
+Aurora Engine
+ ├── Core
  ├── Renderer
+ ├── Camera
  ├── Shader System
  ├── Mesh
- ├── Texture
  ├── Physics
  ├── UI
  └── Scene
@@ -88,78 +93,84 @@ Aurora Renderer
 
 ---
 
-# 🌌 Astrophysics Simulation
+# Astrophysics Simulation
 
-Aurora includes several physically inspired visualization techniques.
+Aurora implements several physically inspired visualization techniques executed on the GPU through GLSL shaders.
 
-## 🌠 Paczyński–Wiita Potential
+## Paczyński–Wiita Potential
 
-Pseudo-Newtonian approximation used to simulate particle motion near compact massive objects.
+Implements the pseudo-Newtonian potential for approximating particle motion around compact massive objects.
 
-## 🔭 Gravitational Lensing
+## Gravitational Lensing
 
 Weak-field Schwarzschild approximation for real-time light deflection.
 
-## 🌀 Frame Dragging
+## Frame Dragging
 
 Approximate Kerr-inspired rotational effects applied to particle trajectories.
 
-## 🌈 Relativistic Doppler Effect
+## Relativistic Doppler Shift
 
-Dynamic redshift and blueshift effects based on relative velocity.
+Dynamic redshift and blueshift effects based on the relative velocity between particles and the observer.
 
-## 🕳️ Space Curvature
+## Space Curvature Visualization
 
 Procedural mesh generation inspired by **Flamm's Paraboloid**.
 
 ---
 
-# ⚙️ Performance Goals
+# Performance Goals
 
-Aurora emphasizes predictable performance through:
+Aurora is designed around predictable performance through:
 
+- Modern OpenGL rendering
 - Vertex Buffer Objects (VBO)
 - Vertex Array Objects (VAO)
-- Shader-based rendering
-- Explicit GPU resource management
-- Cache-friendly data layouts
-- Reduced CPU overhead
 - Batch rendering
-- Modern OpenGL pipeline
+- Cache-friendly data layouts
+- Explicit GPU memory management
+- Reduced CPU overhead
 
 ---
 
-# 💻 Requirements
+# Hardware Requirements
 
 | Component | Minimum | Recommended |
-|------------|----------|-------------|
+|-----------|----------|-------------|
 | Operating System | Windows 10 (64-bit) | Windows 11 (64-bit) |
-| CPU | Intel Core i5 / Ryzen 5 | Intel Core i7 / Ryzen 7 |
-| RAM | 8 GB | 16 GB |
-| GPU | GTX 1050 / RX 560 | RTX 3060 / RX 6600 |
-| API | OpenGL 3.3 | OpenGL 4.6 |
+| CPU | Intel Core i5 / AMD Ryzen 5 | Intel Core i7 / AMD Ryzen 7 |
+| Memory | 8 GB RAM | 16 GB RAM |
+| GPU | NVIDIA GTX 1050 / AMD RX 560 | NVIDIA RTX 3060 / AMD RX 6600 |
+| Graphics API | OpenGL 3.3 | OpenGL 4.6 |
 
 ---
 
-# 🔧 Dependencies
+# Dependencies
 
-- SDL3
-- GLAD
-- GLM
-- Assimp
-- Dear ImGui
+Aurora currently depends on the following open-source libraries:
+
+| Library | Purpose |
+|----------|---------|
+| SDL3 | Windowing, Input and Context Creation |
+| GLAD | OpenGL Function Loader |
+| GLM | Mathematics |
+| Assimp | Model Importing |
+| Dear ImGui | Debug Interface |
 
 ---
 
-# 🚀 Building
+# Building
+
+> [!NOTE]
+> Aurora currently targets **Windows** using **Visual Studio** and the **MSVC toolchain**.
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/AuroraVFXEngine.git
+git clone https://github.com/welabsdev/AuroraVFXEngine.git
 ```
 
-Configure your project using **C++23** and link against:
+Configure your project using **C++23** and link the following libraries:
 
 ```text
 SDL3.lib
@@ -167,11 +178,11 @@ assimp.lib
 opengl32.lib
 ```
 
-Compile in **Release x64**.
+Compile using the **Release x64** configuration.
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```text
 Aurora/
@@ -195,16 +206,18 @@ Aurora/
 
 ---
 
-# 🗺️ Roadmap
+# Roadmap
+
+> [!TIP]
+> The following features are planned for future releases.
 
 - [x] OpenGL Renderer
 - [x] GLSL Shader System
-- [x] ImGui Integration
-- [x] Assimp Mesh Loader
+- [x] Assimp Integration
+- [x] Dear ImGui
 - [ ] Deferred Rendering
 - [ ] HDR Rendering
 - [ ] Shadow Mapping
-- [ ] Bloom
 - [ ] Physically Based Rendering (PBR)
 - [ ] Compute Shader Backend
 - [ ] Vulkan Renderer
@@ -215,33 +228,23 @@ Aurora/
 
 ---
 
-# 🤝 Contributing
+# Contributing
 
-Contributions are welcome!
+Contributions are welcome.
 
-You can help by:
+> [!IMPORTANT]
+> Performance improvements, rendering optimizations, shader development, documentation, and bug reports are highly appreciated.
 
-- Reporting bugs
-- Improving performance
-- Optimizing shaders
-- Refactoring engine systems
-- Improving documentation
-- Implementing new rendering techniques
-
-Please open an Issue or Pull Request.
+Please open an **Issue** or submit a **Pull Request**.
 
 ---
 
-# 📜 License
+# License
 
-This project is licensed under the **GNU 3.0 License**.
+This project is distributed under the **GNU 3.0 LICENSE**.
 
 ---
-
-<p align="center">
 
 **Aurora VFX & Astro-Sim Engine**
 
-*Built with modern C++, OpenGL and a passion for computer graphics.*
-
-</p>
+*Built with modern C++, OpenGL, and computational physics.*
