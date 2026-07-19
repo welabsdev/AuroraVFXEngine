@@ -116,7 +116,7 @@ CRITICAL STEP: Copy SDL3.dll and assimp-vc143-mt.dll from your dependency folder
 
 Press F5 to execute.
 
-🤝 Open Source Contribution
+## 🤝 Open Source Contribution
 Aurora is an independent project dedicated to the low-level graphics community. Contributions are highly welcome!
 
 Bug Reports: File an issue describing hardware specifications, driver versions, and GLSL error logs.
@@ -124,3 +124,4 @@ Bug Reports: File an issue describing hardware specifications, driver versions, 
 GPU Optimization: Pull Requests focusing on reducing draw calls, thread orchestration, or custom allocator layouts are highly appreciated.
 
 Developed with precision, C++, and raw math by Wenderson Dias / Siliconarch Softwares.
+
