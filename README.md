@@ -10,7 +10,7 @@ The project is designed as both an educational platform for modern computer grap
 > **Current Version:** `v0.7.0 (Beta - Ultimate Pro)`  
 > **Language Standard:** `C++20`  
 > **Graphics API:** `OpenGL 3.3+ Core Profile`  
-> **Architect:** **Wenderson Dias** (*Siliconarch Softwares*)
+> **Developer:** **Wenderson Dias** (*welabsdev*)
 
 ![Aurora Demo](demo.gif)
 
