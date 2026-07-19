@@ -2,13 +2,13 @@
 
 ## Low-Level, Open Source Graphics & Relativistic Astrophysics Simulation Engine
 
-The **Aurora VFX Engine** is a high-performance **graphics renderer** and **astrophysics simulation engine** written entirely in modern **C++23**. Rather than relying on a full-featured game engine, Aurora is built directly on top of the **OpenGL Core Profile**, providing explicit control over rendering, memory management, and GPU resources.
+The **Aurora VFX Engine** is a high-performance **graphics renderer** and **astrophysics simulation engine** written entirely in modern **C++20**. Rather than relying on a full-featured game engine, Aurora is built directly on top of the **OpenGL Core Profile**, providing explicit control over rendering, memory management, and GPU resources.
 
 The project is designed as both an educational platform for modern computer graphics and a foundation for physically inspired space simulations, combining low-level rendering techniques with real-time visualization of relativistic phenomena.
 
 > [!IMPORTANT]
 > **Current Version:** `v0.7.0 (Beta - Ultimate Pro)`  
-> **Language Standard:** `C++23`  
+> **Language Standard:** `C++20`  
 > **Graphics API:** `OpenGL 3.3+ Core Profile`  
 > **Architect:** **Wenderson Dias** (*Siliconarch Softwares*)
 
@@ -170,7 +170,7 @@ Clone the repository:
 git clone https://github.com/welabsdev/AuroraVFXEngine.git
 ```
 
-Configure your project using **C++23** and link the following libraries:
+Configure your project using **C++20** and link the following libraries:
 
 ```text
 SDL3.lib
