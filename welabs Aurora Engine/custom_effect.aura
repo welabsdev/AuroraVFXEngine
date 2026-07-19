@@ -1,0 +1,10 @@
+# ==========================================================
+# Arquivo de Efeitos de Partículas - Aurora Render Engine
+# ==========================================================
+
+COUNT 1500
+SPEED 1.5
+SIZE 0.08
+LIFESPAN 4
+COLOR_START 0.1 0.8 1 1
+COLOR_END 0.6 0.1 0.9 0

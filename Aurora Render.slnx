@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="welabs Aurora Engine/welabs Aurora Engine.vcxproj" Id="649bc7f6-7d22-4ced-85a7-76b03279b3bb" />
+</Solution>
