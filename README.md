@@ -7,7 +7,7 @@ The **Aurora VFX Engine** is a high-performance **graphics renderer** and **astr
 The project is designed as both an educational platform for modern computer graphics and a foundation for physically inspired space simulations, combining low-level rendering techniques with real-time visualization of relativistic phenomena.
 
 > [!IMPORTANT]
-> **Current Version:** `v0.7.0 (Beta - Ultimate Pro)`  
+> **Current Version:** `v0.7.0`  
 > **Language Standard:** `C++20`  
 > **Graphics API:** `OpenGL 3.3+ Core Profile`  
 > **Developer:** **Wenderson Dias** (*welabsdev*)
